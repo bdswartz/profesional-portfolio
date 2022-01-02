@@ -47,22 +47,48 @@
     font-size: 1.6vw;
     font-weight: bold;
   }
-  #image-holder:hover img{
+  .portfolio-image:hover img{
       transform: scale(1.5);
-
+      transition-duration: .5s;
+      overflow: hidden;
   }
-  #image-description {
-      visibility: hidden;
-  }
-  #image-holder:hover #image-description {
+  .portfolio-image:hover .project-tech {
       visibility: visible;
+      font-size: 1.5vw;
       z-index: 5;
+  }
+  .project-tech {
+    visibility: hidden;
+    position: absolute;
+    font-size: 1.0vw;
+    transition: font-size;
+    transition-duration: .5s;
+    top: 45px;
+    left: 45px;
+    z-index: -1;
   }
   .sticky-header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 9999;
+  }
+  .light-to-dark-section {
+    background-image: linear-gradient(var(--primary-color),var(--secondary-color));
+  }
+  #portfolio-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 800px;
+    margin: 200px auto 300px auto;
+    padding: 30px;
+    border: 20px outset;
+  }
+  .portfolio-image {
+    margin: 10px;
+    position: relative;
   }
 
   #about-me {
@@ -101,6 +127,16 @@
       font-size: 1.2em;
       line-height: 1.3;
   }
+  .section-title {
+    font-size: 2.5vw;
+    font-style: normal;
+    padding-top: 100px;
+    width: 60%;
+    margin: 0 auto 20px auto;
+    border-bottom: 3px solid;
+    padding-bottom: 10px;
+    text-align: center;
+}
 
   /*******    Media Queries     ********/
 
