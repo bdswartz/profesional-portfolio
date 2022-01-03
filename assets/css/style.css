@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*******   Element Selectors     *****/
   body {
     font-family: 'Lato', sans-serif;
   }
@@ -46,13 +47,14 @@
   header nav ul li a {
   /*  margin: 10px 30px;
     padding: 10px 5px; */
-    font-weight: lighter;
     font-size: 1.75vw;
     font-weight: bold;
   }
   img {
     border-radius: 15px;
   }
+
+  /********     Class Selectors     ********/
   .section-title {
     font-size: 2.5vw;
     font-style: normal;
@@ -70,6 +72,7 @@
     overflow: visible;
   }
   .portfolio-image-article:hover .project-tech {
+      color: white;
       visibility: visible;
       color: var(--tertiary-color);
       font-size: 1.5vw;
@@ -78,6 +81,7 @@
   .project-tech {
     visibility: hidden;
     position: absolute;
+    color: white;
     font-size: .75vw;
     transition: font-size;
     transition-duration: .5s;
@@ -114,7 +118,22 @@
     max-height: 25px;
     width: auto;
   }
-
+  .contact-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+    padding-bottom: 50px;
+  }
+  .contact-invite {
+    width: 40%;
+    margin-left: 10px;
+  }
+  .contact-icon-container {
+    width: 20%;
+  }
+  /**********    ID Selectors     *******/
   #about-me {
     display:flex;
     flex-wrap: wrap;
@@ -141,7 +160,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 200px 15%;
+    margin: 200px 10%;
     margin-right: 0;
   }
   #image-holder img {
@@ -149,9 +168,9 @@
     width: 200px;
   }
   #bio-holder {
-    width: 40%;
+    width: 50%;
     justify-content: left;
-    margin: 200px 15%;
+    margin: 200px 10%;
     margin-left: 0;
   }
   #bio-holder h2 {
@@ -174,24 +193,9 @@
     max-width: 800px;
     margin: 200px auto 0 auto;
   }
-  .contact-flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 50px;
-    margin: 0;
-    padding-bottom: 50px;
-  }
   #contact-info {
     padding-top: 100px;
     justify-content: center;
-  }
-  .contact-invite {
-    width: 35%;
-    margin-left: 10px;
-  }
-  .contact-icon-container {
-    width: 15%;
   }
 
   /*******    Media Queries     ********/
@@ -201,21 +205,41 @@
   }
 
   @media screen and (max-width: 768px) {
-    #image-holder, #bio-holder {
+    #image-holder {
         width: 100%;
-        margin:20px;
+        margin: 100px 20px 0px 20px;
     }
     #bio-holder {
         text-align: left;
+        margin: 20 px;
+        width: 100%;
     }
     #bio-holder h2{
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
-  }
+    #contact-icon-holder {
+      visibility: hidden;
+      position: absolute;
+    }
+    header nav ul li a {
+        font-size: 2.0vw;
+        font-weight: bold;
+    }
+    .contact-flex-container {
+      padding-top: 0;
+    }
+    #portfolio-flexbox {
+      margin-top: 100px;
+    }
+    #bio-holder {
+     width: 100%;
+      justify-content: left;
+      margin: 100px 20px;
+    }
+}
 
   @media screen and (max-width: 575px) {
 
   }
- 
-
-
