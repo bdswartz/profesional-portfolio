@@ -17,8 +17,8 @@
         <h1>
             <a href="#top-of-page">brian swartz</a>
         </h1> 
+            <!--Unordered List for Navigation-->
         <nav>
-    <!--Unordered List for Navigation-->
             <ul>
                 <li>
                     <a href="#about-me">About Me</a>
@@ -34,8 +34,16 @@
                 </li>
             </ul>
         </nav>
-        <div>
-            <p> Contact Section</p>
+        <div id="contact-icon-holder">
+            <a href="mailto: bdswartz72@gmail.com">
+                <img class="header-icon" src="./assets/images/email-white.png" alt="email icon">
+            </a>
+            <a href="https://www.linkedin.com/in/brian-swartz-021b77a1/">
+                <img class="header-icon" src="./assets/images/linkedin-logo-png-1826.png" alt="LinkedIn logo">
+            </a>
+            <a href="https://github.com/bdswartz">
+                <img class="header-icon" src="./assets/images/github-icon-transparent.png" alt="GitHub logo">
+            </a>
         </div>
     </header>
   <section id="about-me">
@@ -47,12 +55,12 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel officiis, porro animi magnam perferendis vitae est quo, quisquam recusandae ut illo explicabo assumenda reiciendis sunt a itaque labore ex nemo!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel officiis, porro animi magnam perferendis vitae est quo, quisquam recusandae ut illo explicabo assumenda reiciendis sunt a itaque labore ex nemo</p>
       </div>
   </section>
-  <section class="light-to-dark-section">
+  <section class="light-to-dark-section" id="portfolio-gallery">
     <h2 class="section-title">Technical Portfolio</h2>
     <div id="portfolio-flexbox">
-        <article class="portfolio-image">
+        <article class="portfolio-image-article">
             <a class="image-container" href="https://bdswartz.github.io/run-buddy/">
-            <img src="https://via.placeholder.com/200"/>
+            <img class="portfolio-image" src="./assets/images/running-shoes.jpeg" alt="Clement Helardot"/>
             <div class="project-tech">
                 <h3>Run Buddy</h3>
                 <p>HTML</p>
@@ -61,9 +69,9 @@
             </div>
             </a>
         </article>
-        <article class="portfolio-image">
+        <article class="portfolio-image-article">
             <a class="image-container" href="https://bdswartz.github.io/run-buddy/">
-            <img src="https://via.placeholder.com/200"/>
+            <img class="portfolio-image" src="./assets/images/laptop-with-code.jpg" alt="Laptop with Code by Clement Helardot"/>
             <div class="project-tech">
                 <h3>Run Buddy</h3>
                 <p>HTML</p>
@@ -72,9 +80,9 @@
             </div>
         </a>
         </article>
-        <article class="portfolio-image">
+        <article class="portfolio-image-article">
             <a class="image-container" href="https://bdswartz.github.io/run-buddy/">
-            <img src="https://via.placeholder.com/200"/>
+            <img class="portfolio-image" src="./assets/images/macbook-andras-vas.jpeg" alt="Macbook by Andras Vas"/>
             <div class="project-tech">
                 <h3>Run Buddy</h3>
                 <p>HTML</p>
@@ -83,9 +91,9 @@
             </div>
             </a>
         </article>
-        <article class="portfolio-image">
+        <article class="portfolio-image-article">
             <a class="image-container" href="https://bdswartz.github.io/run-buddy/">
-            <img src="https://via.placeholder.com/200"/>
+            <img class="portfolio-image" src="./assets/images/laptop-plain.jpeg" alt="Laptop on Table"/>
             <div class="project-tech">
                 <h3>Run Buddy</h3>
                 <p>HTML</p>
@@ -94,9 +102,9 @@
             </div>
         </a>
         </article>
-        <article class="portfolio-image">
+        <article class="portfolio-image-article">
             <a class="image-container" href="https://bdswartz.github.io/run-buddy/">
-            <img src="https://via.placeholder.com/200"/>
+            <img class="portfolio-image" src="./assets/images/macbook-andras-vas.jpeg" alt="Macbook by Andras Vas"/>
             <div class="project-tech">
                 <h3>Run Buddy</h3>
                 <p>HTML</p>
@@ -105,9 +113,9 @@
             </div>
         </a>
         </article>
-        <article class="portfolio-image">
+        <article class="portfolio-image-article">
             <a class="image-container" href="https://bdswartz.github.io/run-buddy/">
-            <img src="https://via.placeholder.com/200"/>
+            <img class="portfolio-image" src="./assets/images/macbook-andras-vas.jpeg" alt="Macbook by Andras Vas"/>
             <div class="project-tech">
                 <h3>Run Buddy</h3>
                 <p>HTML</p>
@@ -118,9 +126,48 @@
         </article>
     </div>
   </section>
-  <section id="contact-info">
-
+  <section id="contact-info" class="dark-to-light-section">
+      <h2 class="section-title">Contact Information</h2>
+      <div class="contact-flex-container">
+          <div class="contact-icon-container">
+            <a href="mailto: bdswartz72@gmail.com">
+              <img class="icon-image" src="./assets/images/email-icon-amersand.png" alt="email icon">
+            </a>
+          </div>
+          <div class="contact-invite">
+            <h3>Email</h3>
+            <p>
+            Please feel free to contact me by email at bdswartz72@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="contact-flex-container">
+            <div class="contact-icon-container">
+                <a href="https://www.linkedin.com/in/brian-swartz-021b77a1/">
+                    <img class="icon-image" src="./assets/images/linkedin-logo-png-1826.png" alt="LinkedIn logo">
+                </a>
+            </div>
+            <div class="contact-invite">
+              <h3>LinkedIn</h3>
+              <p>
+                ...or visit my LinkedIn page for more details on my previous work experience.
+              </p>
+            </div>
+        </div>
+        <div class="contact-flex-container">
+            <div class="contact-icon-container">
+                <a href="https://github.com/bdswartz">
+                <img class="icon-image" src="./assets/images/github-icon-transparent.png" alt="GitHub logo">
+                </a>
+            </div>
+            <div class="contact-invite">
+                <h3>GitHub</h3>
+                <p>
+                ...or feel free to browse what I have been doing lately at my GitHub page.
+                </p>
+                </a>
+            </div>
+        </div>
   </section>
-
 </body>
 </html>
