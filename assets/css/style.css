@@ -325,7 +325,7 @@
     }
 }
 
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 550px) {
     .contact-icon-container {
       width: 100%;
       text-align: center;
@@ -336,7 +336,7 @@
       width: 100%;
     }
     header nav ul li a {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: bold;
     }
     header h1 {
@@ -349,15 +349,15 @@
       font-size: 16px;
     }
     .section-title {
-      font-size: 16px;
+      font-size: 20px;
       padding-top: 50px;
       margin-bottom: 50px;
     }
     #bio-holder h2 {
-      font-size: 16px;
+      font-size: 20px;
     }
     #bio-holder p {
-      font-size: 12px;
+      font-size: 16px;
     }
     #portfolio-image1 {
       width: 200px;
