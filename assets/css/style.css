@@ -90,6 +90,28 @@
   }
   
   /********     Class Selectors     ********/
+  .hero-section {
+    background-image: url("../images/beach-sunrise.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    font-weight: bold;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+    width: auto;
+  }
+  .hero-title img {
+    height: 150px;
+    width: 150px;
+  }
+  .hero-title h1 {
+    margin: 20px;
+  }
   .sticky-header {
     position: -webkit-sticky;
     position: sticky;
