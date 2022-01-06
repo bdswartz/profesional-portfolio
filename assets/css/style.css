@@ -55,11 +55,11 @@
     margin: 0 auto 0 auto;
   }
   header nav ul li a {
-    padding: 2px 7px;
   }
   header nav ul li a {
-    font-size: 1.75vw;
+    font-size: 1.50vw;
     font-weight: bold;
+    padding: 2px 7px;
     text-shadow: 0 0 10px rgba(255, 255, 255, .4);
   }
   header h1 a:hover {
