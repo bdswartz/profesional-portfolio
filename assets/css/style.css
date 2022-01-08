@@ -4,64 +4,61 @@
     --tertiary-color: rgb(3, 25, 99);
     }
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 /*******   Type Selectors     *****/
   body {
     font-family: 'Lato', sans-serif;
   }
+  /* Flexbox header styling */
   header {
-    padding: 15px 0;
-    background-color: var(--secondary-color);
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     align-content: center;
     align-items: center;
-  }
-  header nav {
-   width: 50%;
+    background-color: var(--secondary-color);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0;
   }
   header h1 {
-    width: 20%;
-    font-weight: bold;
-    font-size: 2.5vw;
-    margin-left: auto;
-    color: var(--primary-color);
-    margin-right: auto;
-    background-color: var(--secondary-color);
     align-content: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 2.0rem;
+    margin-left: auto;
+    margin-right: auto;
     text-shadow: 0 0 10px rgba(255, 255, 255, .4);
+    width: 20%;
   }
-  header nav {
-    width: 60%
+  header a {
+  color: var(--primary-color);
+  text-decoration: none;
   }
   header h1 a {
     padding: 3px 10px;
   }
-  header a {
-    color: var(--primary-color);
-    text-decoration: none;
+  header nav {
+    width: 60%
   }
   header nav ul {
+    align-content: center;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
     list-style: none;
   }
   header nav ul li {
-    margin: 0 auto 0 auto;
+    margin: 5px auto 5px auto;
   }
   header nav ul li a {
-  }
-  header nav ul li a {
-    font-size: 1.50vw;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 2px 7px;
     text-shadow: 0 0 10px rgba(255, 255, 255, .4);
   }
+  /* Provide hover background effects on the navigation items */
   header h1 a:hover {
     background-color: black;
     border-radius: 20px;
@@ -77,20 +74,21 @@
   }
   footer {
     background: var(--primary-color);
-    width: 100%;
-    padding: 40px 35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 40px 35px;
+    width: 100%;
   }
   footer h4 {
     color: var(--tertiary-color);
     font-size: 1.0vw;
-    margin: 0;
   }
   
   /********     Class Selectors     ********/
+  /* Hero section to fill screen vertically upon loading based on screen height */
   .hero-section {
+    align-items: center;
     background-image: url("../images/beach-sunrise.jpg");
     background-size: cover;
     background-position: center;
@@ -100,70 +98,83 @@
     flex-wrap: wrap;
     height: 100vh;
     justify-content: center;
-    align-items: center;
     text-align: center;
     text-shadow: 0 0 10px black;
-    width: auto;
+  }
+  .hero-title {
+    justify-content: center;
+    width: 75%;
   }
   .hero-title img {
     height: 150px;
     width: 150px;
   }
-  .hero-title h1 {
-    margin: 20px;
+  .hero-title h1, .hero-title h2 {
+    margin-top: 10px;
+    justify-content: center;
   }
+
+  /* Header rides the bottom of the hero until it sticks to top of screen */
   .sticky-header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 9999;
   }
+  .header-icon {
+    max-height: 25px;
+    width: auto;
+  }
   .section-title {
-    font-size: 2.5vw;
+    border-bottom: 3px solid;
+    font-size: 2.0rem;
     font-style: normal;
     padding-top: 100px;
-    width: 60%;
-    margin: 0 auto 75px auto;
-    border-bottom: 3px solid;
     padding-bottom: 10px;
+    margin: 0 auto 75px auto;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 60%;
   }
+  /* dividing elements to separate skills and experience in About Me */
   .divider {
-    width: 40%;
     border-bottom: 1px solid black;
     margin: 30px 0;
+    width: 40%;
   }
+  /* Background effect styling different sections */
   .light-to-dark-section {
     background-image: linear-gradient(var(--primary-color),var(--secondary-color));
   }
   .dark-to-light-section {
     background-image: linear-gradient(var(--secondary-color),var(--primary-color));
   }
+  /* Project technology information and positioning to land on image */
   .project-tech {
-    position: absolute;
     color: white;
-    width: 300px;
+    position: absolute;
     height: 300px;
     top: 20px;
     left: 0;
+    width: 300px;
   }
   .project-tech h3 {
     color: white;
-    width: 100%;
     font-size: 28px;
-    text-align: center;
     margin: 0 auto 30px auto;
+    text-align: center;
     text-shadow: 0 0 8px black;
-  }
-  .project-tech p {
-    visibility: hidden;
-    color: white;
     width: 100%;
+  }
+  /* Hidden tech information to be revealed on hover */
+  .project-tech p {
+    color: white;
     font-size: 12px;
     margin: 10px auto 0 auto;
     text-align: center;
     text-shadow: 0 0 5px black;
+    visibility: hidden;
+    width: 100%;
   }
   .portfolio-image-article:hover img{
     transform: scale(1.5);
@@ -180,9 +191,15 @@
     top: 30px;
     z-index: 5;
   }
+  /* portofolio image sizing/positioning and animation on hover */
   .portfolio-image-article {
     margin: 10px;
     position: relative;
+  }
+  .portfolio-image {
+    height: 300px;
+    width: 300px;
+    border: solid 1px var(--tertiary-color);
   }
   .portfolio-image-article:hover .project-tech p {
     visibility: visible;
@@ -192,22 +209,14 @@
     top: 30px;
     z-index: 5;
   }
-  .portfolio-image {
-    height: 300px;
-    width: 300px;
-    border: solid 1px var(--tertiary-color);
-  }
-  .header-icon {
-    max-height: 25px;
-    width: auto;
-  }
+  /* Contect section flexbox */
   .contact-flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 30px;
-    margin: 0;
     padding-bottom: 30px;
+    margin: 0;
   }
   .contact-icon-container {
     width: 20%;
@@ -217,8 +226,8 @@
     margin: 0;
   }
   .contact-invite {
-    width: 40%;
     margin-left: 10px;
+    width: 40%;
   }
   .contact-invite a{
     text-decoration: none;
@@ -269,7 +278,7 @@
     height: 200px;
     width: 200px;
   }
-  #bio-holder {
+  .bio-holder {
     width: 50%;
     justify-content: left;
     margin: 100px 10%;
@@ -279,19 +288,19 @@
     margin: 10px 0;
   }
 
-  #bio-holder h2 {
+  /* #bio-holder h2 { 
     border-bottom: 2px solid;
     font-size: 2.5vw;
     margin: 30px 0;
     padding-bottom: 10px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 50%;
-  }
-  #bio-holder p li {
+  }*/
+  .bio-holder p li {
     font-size: 1.4em;
     line-height: 1.5;
   }
-  #bio-holder li {
+  .bio-holder li {
     list-style-position: inside;
   }
   #portfolio-flexbox {
@@ -304,7 +313,7 @@
     margin: 150px auto 0 auto;
   }
   #portfolio-image1 {
-    width: 615px;
+    width: 610px;
     height: 300px;
   }
   #contact-info {
@@ -320,11 +329,11 @@
 
   @media screen and (max-width: 768px) {
     header nav ul li a {
-        font-size: 2.3vw;
+        font-size: 1.75 rem;
         font-weight: bold;
     }
     header h1 a {
-      font-size: 3.0vw;
+      font-size: 1.50rem;
     }
     .contact-flex-container {
       padding-top: 0;
@@ -332,16 +341,16 @@
     #image-holder {
         width: 100%;
         margin: 100px 20px 0px 20px;
-    }
-    #bio-holder {
+      }
+    .bio-holder {
         text-align: left;
-        margin: 20 px;
+        margin: 20px;
         width: 100%;
     }
-    #bio-holder h2{
+    .bio-holder h2{
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 20px auto;
+
     }
     #contact-icon-holder {
       visibility: hidden;
@@ -350,16 +359,6 @@
     #portfolio-flexbox {
       margin-top: 100px;
     }
-    #bio-holder {
-     width: 100%;
-      justify-content: left;
-      margin: 100px 20px;
-    }
-    #portfolio-image1 {
-      width: 300px;
-      height: 300px;
-    }
- 
 }
 
   @media screen and (max-width: 550px) {
@@ -403,6 +402,10 @@
       top: 30px;
       z-index: 5;
     }
+    #portfolio-image1 {
+      width: 300px;
+      height: 300px;
+
     .portfolio-image-article:hover .project-tech {
       visibility: visible;
       color: var(--tertiary-color);
@@ -414,7 +417,7 @@
   .portfolio-image-article:hover .project-tech p {
     visibility: visible;
     color: white;
-    transform: scale(1.5);
+    transform: scale(1.0);
     transition-duration: .5s;
     top: 30px;
     z-index: 5;
