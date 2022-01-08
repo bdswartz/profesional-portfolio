@@ -11,6 +11,7 @@
 /*******   Type Selectors     *****/
   body {
     font-family: 'Lato', sans-serif;
+    min-height: 100vh;
   }
   /* Flexbox header styling */
   header {
@@ -129,7 +130,6 @@
     border-bottom: 3px solid;
     font-size: 2.0rem;
     font-style: normal;
-    padding-top: 100px;
     padding-bottom: 10px;
     margin: 0 auto 75px auto;
     text-align: center;
@@ -245,6 +245,7 @@
     align-items: center;
     justify-content: space-between;
     background-image: linear-gradient(var(--secondary-color),var(--primary-color));
+    min-height: 100vh;
   }
   #contact-icon-holder {
     margin-right: 20px;
@@ -281,27 +282,33 @@
   .bio-holder {
     width: 50%;
     justify-content: left;
-    margin: 100px 10%;
+    margin: 75px 10%;
     margin-left: 0;
   }
   .bio-section {
     margin: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
   }
-
-  /* #bio-holder h2 { 
-    border-bottom: 2px solid;
-    font-size: 2.5vw;
-    margin: 30px 0;
-    padding-bottom: 10px;
+  .de-emphasize {
+    color: gray;
+  }
+  .bio-holder h2 {
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 50px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 50%;
-  }*/
+  }
   .bio-holder p li {
     font-size: 1.4em;
     line-height: 1.5;
   }
   .bio-holder li {
     list-style-position: inside;
+  }
+  #portfolio-gallery {
+    min-height: 100vh;
   }
   #portfolio-flexbox {
     display: flex;
@@ -310,13 +317,14 @@
     align-content: center;
     width: 95%;
     max-width: 975px;
-    margin: 150px auto 0 auto;
+    margin: 0 auto 0 auto;
   }
   #portfolio-image1 {
     width: 610px;
     height: 300px;
   }
   #contact-info {
+    min-height: 100vh;
     padding-top: 100px;
     justify-content: center;
   }
