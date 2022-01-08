@@ -136,6 +136,34 @@
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 60%;
   }
+  .bio-holder {
+    width: 50%;
+    justify-content: left;
+    margin: 75px 10%;
+    margin-left: 0;
+  }
+  .bio-section {
+    margin: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .de-emphasize {
+    color: gray;
+  }
+  .bio-holder h2 {
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 50px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 50%;
+  }
+  .bio-holder p li {
+    font-size: 1.4em;
+    line-height: 1.5;
+  }
+  .bio-holder li {
+    list-style-position: inside;
+  }
   /* dividing elements to separate skills and experience in About Me */
   .divider {
     border-bottom: 1px solid black;
@@ -244,7 +272,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-image: linear-gradient(var(--secondary-color),var(--primary-color));
+    /* background-image: linear-gradient(var(--secondary-color),var(--primary-color)); */
     min-height: 100vh;
   }
   #contact-icon-holder {
@@ -279,34 +307,6 @@
     height: 200px;
     width: 200px;
   }
-  .bio-holder {
-    width: 50%;
-    justify-content: left;
-    margin: 75px 10%;
-    margin-left: 0;
-  }
-  .bio-section {
-    margin: 10px 0;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  .de-emphasize {
-    color: gray;
-  }
-  .bio-holder h2 {
-    text-align: left;
-    margin-left: 0;
-    margin-bottom: 50px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 50%;
-  }
-  .bio-holder p li {
-    font-size: 1.4em;
-    line-height: 1.5;
-  }
-  .bio-holder li {
-    list-style-position: inside;
-  }
   #portfolio-gallery {
     min-height: 100vh;
   }
@@ -328,7 +328,6 @@
     padding-top: 100px;
     justify-content: center;
   }
-
   /*******    Media Queries     ********/
 
   @media screen and (max-width: 980px) {
@@ -337,15 +336,26 @@
 
   @media screen and (max-width: 768px) {
     header nav ul li a {
-        font-size: 1.75 rem;
+        font-size: 1.25rem;
         font-weight: bold;
     }
+    header nav ul {
+      margin-right: 10%;
+      /* margin: 0 0 0 10%; */
+    }
+    header h1 {
+      margin: 0 0 0 10%;
+      width: 30%;
+    }
     header h1 a {
-      font-size: 1.50rem;
+      font-size: 1.75rem;
+      /* margin-left: auto;
+      margin-right: auto; */
+      width: auto;
     }
-    .contact-flex-container {
+    /* .contact-flex-container {
       padding-top: 0;
-    }
+    } */
     #image-holder {
         width: 100%;
         margin: 100px 20px 0px 20px;
@@ -358,7 +368,6 @@
     .bio-holder h2{
         text-align: center;
         margin: 20px auto;
-
     }
     #contact-icon-holder {
       visibility: hidden;
@@ -370,6 +379,24 @@
 }
 
   @media screen and (max-width: 550px) {
+    header nav ul li a {
+      font-size: 1.0rem;
+      font-weight: bold;
+  }
+  header nav ul {
+    margin-right: 5%;
+    /* margin: 0 0 0 10%; */
+  }
+  header h1 {
+    margin: 0 0 0 5%;
+    width: 30%;
+  }
+  header h1 a {
+    font-size: 1.0rem;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: auto;
+  }
     .contact-icon-container {
       width: 100%;
       text-align: center;
@@ -379,29 +406,15 @@
       margin-right: 15%;
       width: 100%;
     }
-    header nav ul li a {
-      font-size: 14px;
-      font-weight: bold;
-      margin-right: 20px;
-    }
-    header h1 {
-      width: 30%;
-    }
-    header nav {
-      width: 70%;
-    }
-    header h1 a {
-      font-size: 16px;
-    }
     .section-title {
       font-size: 20px;
       padding-top: 50px;
       margin-bottom: 50px;
     }
-    #bio-holder h2 {
+    .bio-holder h2 {
       font-size: 20px;
     }
-    #bio-holder p {
+    .bio-holder p {
       font-size: 16px;
     }
     .project-tech {
@@ -413,7 +426,7 @@
     #portfolio-image1 {
       width: 300px;
       height: 300px;
-
+    }
     .portfolio-image-article:hover .project-tech {
       visibility: visible;
       color: var(--tertiary-color);
