@@ -148,7 +148,7 @@
     text-transform: uppercase;
   }
   .de-emphasize {
-    color: gray;
+    color: rgb(77, 76, 76);
   }
   .bio-holder h2 {
     text-align: left;
@@ -330,11 +330,8 @@
   }
   /*******    Media Queries     ********/
 
-  @media screen and (max-width: 980px) {
-   
-  }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     header nav ul li a {
         font-size: 1.25rem;
         font-weight: bold;
