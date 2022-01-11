@@ -270,8 +270,8 @@
   #about-me {
     display:flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    align-items:center;
+    /* justify-content: space-between; */
     /* background-image: linear-gradient(var(--secondary-color),var(--primary-color)); */
     min-height: 100vh;
   }
@@ -296,16 +296,16 @@
     width: 20%;
     display: flex;
     justify-content: center;
-    margin: 100px 10%;
+    margin: 50px 10%;
     margin-right: 0;
-  }
-  #contact-icon-holder a:hover {
-    background-color: black;
-    border-radius: 15px;
   }
   #image-holder img {
     height: 200px;
     width: 200px;
+  }
+  #contact-icon-holder a:hover {
+    background-color: black;
+    border-radius: 15px;
   }
   #portfolio-gallery {
     min-height: 100vh;
@@ -334,7 +334,7 @@
    
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     header nav ul li a {
         font-size: 1.25rem;
         font-weight: bold;
@@ -344,8 +344,8 @@
       /* margin: 0 0 0 10%; */
     }
     header h1 {
-      margin: 0 0 0 10%;
-      width: 30%;
+      margin: 0 0 0 5%;
+      width: 35%;
     }
     header h1 a {
       font-size: 1.75rem;
@@ -358,7 +358,7 @@
     } */
     #image-holder {
         width: 100%;
-        margin: 100px 20px 0px 20px;
+        margin: 50px 20px 0px 20px;
       }
     .bio-holder {
         text-align: left;
@@ -382,21 +382,24 @@
     header nav ul li a {
       font-size: 1.0rem;
       font-weight: bold;
-  }
-  header nav ul {
-    margin-right: 5%;
-    /* margin: 0 0 0 10%; */
-  }
-  header h1 {
-    margin: 0 0 0 5%;
-    width: 30%;
-  }
-  header h1 a {
-    font-size: 1.0rem;
+    }
+    header nav {
+      width: 55%;
+    }
+    header nav ul {
+      margin-right: 5%;
+      /* margin: 0 0 0 10%; */
+    }
+    header h1 {
+      margin: 0 0 0 5%;
+      width: 35%;
+    }
+    header h1 a {
+      font-size: 1.0rem;
     /* margin-left: auto;
     margin-right: auto; */
-    width: auto;
-  }
+      width: auto;
+    }
     .contact-icon-container {
       width: 100%;
       text-align: center;
@@ -407,7 +410,7 @@
       width: 100%;
     }
     .section-title {
-      font-size: 20px;
+      font-size: 24px;
       padding-top: 50px;
       margin-bottom: 50px;
     }
