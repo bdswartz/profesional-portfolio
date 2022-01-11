@@ -124,7 +124,6 @@
   }
   .header-icon {
     max-height: 25px;
-    width: auto;
   }
   .section-title {
     border-bottom: 3px solid;
@@ -139,8 +138,7 @@
   .bio-holder {
     width: 50%;
     justify-content: left;
-    margin: 75px 10%;
-    margin-left: 0;
+    margin: 75px 5%;
   }
   .bio-section {
     margin: 10px 0;
@@ -331,7 +329,7 @@
   /*******    Media Queries     ********/
 
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 980px) {
     header nav ul li a {
         font-size: 1.25rem;
         font-weight: bold;
