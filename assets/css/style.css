@@ -311,7 +311,7 @@ header nav ul li a {
     margin-right: 0;
   }
   .portrait-holder img {
-    height: 200px;
+    height: auto;
     width: 200px;
   }
   footer {
