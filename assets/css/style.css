@@ -142,7 +142,7 @@ header nav ul li a {
     border-radius: 15px;
   }
   /* About Me section styling */
-  .about-me {
+  #about-me {
     display:flex;
     flex-wrap: wrap;
     align-items:center;
@@ -260,7 +260,7 @@ header nav ul li a {
     z-index: 5;
   }
   /*      Contact section flexbox     */
-  .contact-info-section {
+  #contact-info-section {
     min-height: 100vh;
     padding-top: 100px;
     justify-content: center;
