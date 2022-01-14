@@ -19,8 +19,8 @@ as requested, contributing photography by Clement Helardot and Andras Vas gracio
 
 The following is of the About Me section.  This section is designed to background to my work experience and an overview of my recent UNC-Chapel Hill Bootcamp experience.
 
-![Top of Landing Page](./assets-folder/images/screenshot1.jpeg)
+![Top of Landing Page](./assets/images/screenshot1.jpeg)
 
 The following is of the portfolio page with oversized photo of my feature project and animation to provide information to direct prospective employers to the correct project(s) for review.
 
-![Bottom of Landing Page](./assets-folder/images/screenshot2.jpeg)
+![Bottom of Landing Page](./assets/images/screenshot2.jpeg)
