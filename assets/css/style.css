@@ -1,6 +1,6 @@
 :root {
   --primary-color: rgb(194, 208, 255);
-  --secondary-color: rgb(57, 60, 65);
+  --secondary-color: rgb(100, 100, 100);
   --tertiary-color: rgb(3, 25, 99);
 }
 * {
@@ -23,7 +23,7 @@ img {
   padding-bottom: 10px;
   margin: 0 auto 75px auto;
   text-align: center;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   width: 60%;
 }
 /* Background effect styling different sections to be used throughout*/
@@ -166,14 +166,16 @@ header nav ul li a {
   }
   .bio-holder {
     flex: 1 1 50%;
-    /* width: 50%; */
     justify-content: left;
     margin: 50px 5%;
   }
-  .bio-section {
+  .bio-section h3{
     margin: 10px 0;
     font-weight: bold;
     text-transform: uppercase;
+  }
+  .bio-section p {
+    font-size: 1.35rem;
   }
   /* deemphasize personal (as opposed to professional) bio information */
   .bio-holder h2 {
@@ -183,15 +185,12 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 50%;
   }
-  .bio-holder p li {
-    font-size: 1.4em;
-    line-height: 1.5;
-  }
-  .bio-holder li {
-    list-style-position: inside;
+  .skills-experience {
+    font-size: 1.35rem;
   }
   .de-emphasize {
     color: rgba(0, 0, 0, 0.75);
+    font-size: 1.2rem;
   }
   /* dividing elements to separate skills and experience in About Me */
   .divider {
@@ -216,19 +215,56 @@ header nav ul li a {
     height: 300px;
     width: 300px;
     border: solid 1px var(--tertiary-color);
+    border-radius: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size : auto 100%;
+  }
+  .tranparent {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    border-radius: 15px;
   }
   /* Special sizing for flag ship portfolio */
-  #portfolio-image1 {
+  #portfolio1 {
     width: 610px;
     height: 300px;
+    background-image: url("../images/ticketmaster-logo-azure.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: aliceblue;
   }
-  .portfolio-image-article {
-    margin: 10px;
-    position: relative;
+#portfolio2 {
+  background-image: url("http://openweathermap.org/img/wn/11d@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size : auto 100%;
+  background-color: rgb(133, 151, 233);
   }
+
+#portfolio3 {
+  background-image: url("../images/test-a-plus.webp")
+  }
+#portfolio4 {
+  background-image: url("../images/planner.png");
+  background-size: 100% auto;
+  }
+#portfolio5 {
+  background-image: url("../images/run-buddy-icon.jpg");
+  background-size: auto 100%;
+  }
+.portfolio-image-article {
+  margin: 10px;
+  position: relative;
+}
   /* Project general information to be displayed on corresponding project image */
   .project-tech {
-    color: white;
+    color: black;
     position: absolute;
     height: 300px;
     top: 20px;
@@ -236,24 +272,26 @@ header nav ul li a {
     width: 300px;
   }
   .project-tech h3 {
-    color: white;
+    color: black;
     font-size: 28px;
+    font-weight: bold;
     margin: 0 auto 30px auto;
     text-align: center;
-    text-shadow: 0 0 8px black;
+    text-shadow: 0 0 8px white;
     width: 100%;
   }
   /* Hidden tech information to be revealed on project image hover */
   .project-tech p {
-    color: white;
+    color: black;
     font-size: 16px;
     margin: 10px auto 0 auto;
     text-align: center;
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 5px white;
+    font-weight: bold;
     visibility: hidden;
     width: 100%;
   }
-  .portfolio-image-article:hover img{
+  .portfolio-image-article:hover .portfolio-image{
     transform: scale(1.5);
     transition-duration: .5s;
     border: 5px solid var(--tertiary-color);
@@ -270,7 +308,7 @@ header nav ul li a {
   }
   .portfolio-image-article:hover .project-tech p {
     visibility: visible;
-    color: white;
+    color: black;
     transform: scale(1.5);
     transition-duration: .5s;
     top: 30px;
