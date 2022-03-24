@@ -221,7 +221,7 @@ header nav ul li a {
     /* background-size: cover; */
     background-size : auto 100%;
   }
-  .tranparent {
+  .transparent {
     background-color: white;
     width: 100%;
     height: 100%;
@@ -262,12 +262,49 @@ header nav ul li a {
   margin: 10px;
   position: relative;
 }
+.project-link {
+  display: block;
+}
+.github-link {
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+.image-link {
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
+.git-tooltip .git-tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.git-tooltip:hover .git-tooltiptext {
+  visibility: visible;
+}
   /* Project general information to be displayed on corresponding project image */
   .project-tech {
     color: black;
     position: absolute;
     height: 300px;
-    top: 20px;
+    top: 0;
     left: 0;
     width: 300px;
   }
@@ -275,7 +312,7 @@ header nav ul li a {
     color: black;
     font-size: 28px;
     font-weight: bold;
-    margin: 0 auto 30px auto;
+    margin: 10px auto 30px auto;
     text-align: center;
     text-shadow: 0 0 8px white;
     width: 100%;
@@ -291,6 +328,9 @@ header nav ul li a {
     visibility: hidden;
     width: 100%;
   }
+  .project-tech p:first-child {
+    margin-top: 30px;
+  }
   .portfolio-image-article:hover .portfolio-image{
     transform: scale(1.5);
     transition-duration: .5s;
@@ -298,13 +338,13 @@ header nav ul li a {
     position: relative;
     z-index: 3;
   }
+  
   .portfolio-image-article:hover .project-tech {
     visibility: visible;
     color: var(--tertiary-color);
     transform: scale(1.5);
     transition-duration: .5s;
-    top: 30px;
-    z-index: 5;
+    z-index: 4;
   }
   .portfolio-image-article:hover .project-tech p {
     visibility: visible;
@@ -312,7 +352,10 @@ header nav ul li a {
     transform: scale(1.5);
     transition-duration: .5s;
     top: 30px;
-    z-index: 5;
+    z-index: 4;
+  }
+  .portfolio-image-article:hover .portfolio-image .github-link{
+    z-index: 8;
   }
   /*      Contact section flexbox     */
   #contact-info-section {
