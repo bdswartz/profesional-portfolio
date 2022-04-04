@@ -225,7 +225,7 @@ header nav ul li a {
     background-color: white;
     width: 100%;
     height: 100%;
-    opacity: 0.8;
+    opacity: 0.75;
     border-radius: 15px;
     align-items: center;
     justify-content: center;
@@ -258,7 +258,7 @@ header nav ul li a {
   background-size: 100% auto;
   }
 #portfolio5 {
-  background-image: url("../images/run-buddy-icon.jpg");
+  background-image: url("../images/tech_blog.jpg");
   background-size: auto 100%;
   } 
 .portfolio-image-article {
@@ -281,7 +281,7 @@ header nav ul li a {
   color: black;
   opacity: 1 !important;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   width: 225px; 
   text-align: center;
   margin: auto auto;
@@ -291,7 +291,7 @@ header nav ul li a {
   color: black;
   opacity: 1 !important;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   width: 400px; 
   text-align: center;
   margin: auto auto;
