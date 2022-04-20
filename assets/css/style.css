@@ -38,11 +38,12 @@ a {
   text-decoration: none;
 }
   /* Hero section to fill screen vertically upon loading based on screen height */
-.hero-section {
+.backsplash-section {
   align-items: center;
   background-image: url("../images/beach-sunrise.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   color: white;
   display: flex;
   font-weight: bold;
@@ -51,6 +52,46 @@ a {
   justify-content: center;
   text-align: center;
   text-shadow: 0 0 10px black;
+}
+
+.backsplash-section2 {
+  align-items: center;
+  background-image: url("../images/3828864.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  font-weight: bold;
+  flex-wrap: wrap;
+  height: 50vh;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 0 0 10px black; 
+}
+
+.backsplash-section3 {
+  align-items: center;
+  background-image: url("../images/desk-1650424050588-9093.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  font-weight: bold;
+  flex-wrap: wrap;
+  height: 50vh;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 0 0 10px black; 
+}
+
+.portfolio-intro {
+  font-weight: normal;
+  font-size: 3.0rem;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  color: var(--primary-color);
 }
 .hero-title {
   justify-content: center;
@@ -201,15 +242,17 @@ header nav ul li a {
   /* portofolio section styling image sizing/positioning and animation on hover */
   #portfolio-gallery {
     min-height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
   }
   .portfolio-flexbox {
-    display: flex;
+    display: flex;  
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     width: 95%;
     max-width: 975px;
-    margin: 0 auto 0 auto;
   }
   .portfolio-image {
     height: 300px;
@@ -381,7 +424,7 @@ header nav ul li a {
   }
   /*      Contact section flexbox     */
   #contact-info-section {
-    min-height: 100vh;
+    min-height: 85vh;
     padding-top: 100px;
     justify-content: center;
   }
@@ -389,8 +432,8 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: 0;
   }
   .contact-icon-container {
@@ -427,7 +470,7 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 40px 35px;
+    padding: 20px 35px;
     width: 100%;
   }
   footer h4 {
