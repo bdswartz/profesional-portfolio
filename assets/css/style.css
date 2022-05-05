@@ -366,14 +366,14 @@ body {
     .backsplash-section1 {
         align-items: center;
         background-image: url("../images/beach-sunrise.jpg");
-        background-size: 800px 600px;
-        background-position:top;
+        background-size: 1700px 1300px;
+        background-position:bottom;
         background-attachment: fixed;
         color: white;
         display: flex;
         font-weight: bold;
         flex-wrap: wrap;
-        height: 50vh;
+        height: 100vh;
         justify-content: center;
         text-align: center;
         text-shadow: 0 0 10px black;
@@ -382,14 +382,14 @@ body {
     .backsplash-section2 {
         align-items: center;
         background-image: url("../images/3828864.jpg");
-        background-size: 800px 400px;
-        background-position: top;
+        background-size: 800px 500px;
+        background-position: bottom;
         background-attachment: scroll;
         color: white;
         display: flex;
         font-weight: bold;
         flex-wrap: wrap;
-        height: 25vh;
+        height: 40vh;
         justify-content: center;
         text-align: center;
         text-shadow: 0 0 10px black; 
@@ -405,7 +405,7 @@ body {
         display: flex;
         font-weight: bold;
         flex-wrap: wrap;
-        height: 25vh;
+        height: 33vh;
         justify-content: center;
         text-align: center;
         text-shadow: 0 0 10px black; 
