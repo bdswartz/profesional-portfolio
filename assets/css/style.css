@@ -223,7 +223,7 @@ body {
   .card {
       margin-left: auto; 
       margin-right: auto;
-      padding: 20px !important;
+      /* padding: 20px !important; */
       border: 4px solid var(--tertiary-color) !important;
       border-radius: 10px;
       box-shadow: 10px 5px 20px rgba(9, 13, 62, .5) ;
@@ -367,8 +367,8 @@ body {
         align-items: center;
         background-image: url("../images/beach-sunrise.jpg");
         background-size: 1700px 1300px;
-        background-position:bottom;
-        background-attachment: fixed;
+        background-position: bottom;
+        background-attachment: scroll;
         color: white;
         display: flex;
         font-weight: bold;
