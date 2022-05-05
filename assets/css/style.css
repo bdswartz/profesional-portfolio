@@ -363,7 +363,55 @@ body {
   }
 
   @media screen and (max-width: 900px) {
+    .backsplash-section1 {
+        align-items: center;
+        background-image: url("../images/beach-sunrise.jpg");
+        background-size: 800px 600px;
+        background-position:top;
+        background-attachment: fixed;
+        color: white;
+        display: flex;
+        font-weight: bold;
+        flex-wrap: wrap;
+        height: 50vh;
+        justify-content: center;
+        text-align: center;
+        text-shadow: 0 0 10px black;
+    }
+
+    .backsplash-section2 {
+        align-items: center;
+        background-image: url("../images/3828864.jpg");
+        background-size: 800px 400px;
+        background-position: top;
+        background-attachment: scroll;
+        color: white;
+        display: flex;
+        font-weight: bold;
+        flex-wrap: wrap;
+        height: 25vh;
+        justify-content: center;
+        text-align: center;
+        text-shadow: 0 0 10px black; 
+      }
       
+      .backsplash-section3 {
+        align-items: center;
+        background-image: url("../images/desk-1650424050588-9093.jpg");
+        background-size: 800px 600px;
+        background-position: top;
+        background-attachment:scroll;
+        color: white;
+        display: flex;
+        font-weight: bold;
+        flex-wrap: wrap;
+        height: 25vh;
+        justify-content: center;
+        text-align: center;
+        text-shadow: 0 0 10px black; 
+      }
+    
+    
   }
 
     
