@@ -10,3 +10,4 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Collapsible.init(elems);
   });
 
+document.querySelector(".collapsible").addEventListener ("mouseover", function(e) {(e.target).click();});
