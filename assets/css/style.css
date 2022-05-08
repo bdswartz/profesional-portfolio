@@ -246,57 +246,71 @@ body {
       font-size: 1.5rem !important;
       font-style: italic;
   }
+  .reveal-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height:100%;  
+  }
   .card-reveal p, .card-content p {
       font-size: 1.25rem !important;
-  }
-  .tech {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 1.35rem !important;
-    font-weight: bold;
-    border-bottom: 1px solid var(--tertiary-color) !important;
-  }
-  .card-content, .card-content p, .card-content span, .card-reveal,
-  .card-reveal p, .card-reveal span { 
-      background-color: var(--primary-color) !important;
-      color: var(--tertiary-color) !important;
-  }
-  .card-content {
-      padding:10px;
-      height:250px;
-      border-top: 4px solid var(--tertiary-color);
-  }
-  .card-content p {
-      font-style:italic;
-  }
-  .github-link {
-    opacity: 1;
-    width: 30px;
-    height: 30px;
-    margin-top:5px;
-  }
-#demo-button {
-    font-weight: bolder !important;
-    background-image: radial-gradient(var(--tertiary-color), var(--primary-color) 150%);
-    /* background-color: var(--tertiary-color); */
-    color: var(--primary-color);
-    align-content: center;
-    width: 80px;
-    height: 40px;
-}
+    }
+    .tech {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.35rem !important;
+        font-weight: bold;
+        border-bottom: 1px solid var(--tertiary-color) !important;
+    }
+    .card-content, .card-content p, .card-content span, .card-reveal,
+    .card-reveal p, .card-reveal span { 
+        background-color: var(--primary-color) !important;
+        color: var(--tertiary-color) !important;
+    }
+    .card-content {
+        padding:10px;
+        height:300px;
+        border-top: 4px solid var(--tertiary-color);
+    }
+    .card-content p {
+        font-style:italic;
+        margin-bottom: 10px;
+    }
+    .github-link {
+        opacity: 1;
+        width: 30px;
+        height: 30px;
+        margin-top:5px;
+    }
+    #demo-button {
+        font-weight: bolder !important;
+        background-image: radial-gradient(var(--tertiary-color), var(--primary-color) 150%);
+        /* background-color: var(--tertiary-color); */
+        color: var(--primary-color);
+        align-content: center;
+        width: 80px;
+        height: 40px;
+    }
+    
+    .project-links {
+        /* position:absolute; */
+        align-items: center;
+        /* display: block; */
+        bottom: 20px;   
+        margin-top:auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .project-links a {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 
-.project-links {
-    position:absolute;
-    display: block;
-    bottom: 20px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.project-links a {
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
+    .role-title {
+      font-style: bold;
+      margin-right: 10px;
+    }
+    
 .contact-info-section {
     min-height: 90vh;
     padding-top: 100px;
