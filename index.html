@@ -45,7 +45,8 @@
         <li><a href="./assets/swartz-resume.pdf" target="_blank"><span class="sidenav-item">Resume</span></a></li>
   </ul>
 <!-- ABOUT ME SECTION -->
-<section class="container dark-to-light-section" id="about-me">
+<section class="dark-to-light-section">
+  <div class="container" id="about-me">
     <div class="row">
     <div class="portrait-holder col m12 l5">
         <div class="portrait">
@@ -98,6 +99,7 @@
                       <h5 class="tech-title">Front-End Stack</h5>
                       <ul class="tech-list-group3">
                         <li>JavaScript/ES6</li>
+                        <li>React</li>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>DOM Document API</li>  
@@ -106,6 +108,7 @@
                         <li>jQuery</li>
                         <li>Bootstrap</li>
                         <li>Materialize</li>
+                        <li>Material UI</li>
                       </ul>
                       <h5 class="tech-title">Version Control</h5>
                       <ul class="tech-list-group3">
@@ -120,14 +123,64 @@
         </div>
       </div>
     </div>
+    <div class="icon-container">
+      <img class="image-icon" src="./assets/images/html-icon.svg" alt="">
+      <img class="image-icon" src="./assets/images/css-icon.svg" alt="">
+      <img class="image-icon" src="./assets/images/javascript-icon.svg" alt="">
+      <img class="image-icon" src="./assets/images/react-icon.svg" alt="">
+      <img class="image-icon" src="./assets/images/node-icon.svg" alt="">
+      <img class="image-icon" src="./assets/images/express-icon.svg" alt="">
+      <img class="image-icon" src="./assets/images/mysql-icon.svg" alt="">
+      <img class="image-icon" src="./assets/images/mongodb-icon.svg" alt="">
+      <img class="image-icon" src="./assets/images/graphql-icon.svg" alt="">
+      <img class="image-icon" src="./assets/images/github-icon.svg" alt="">
+    </div>
+  </div>  
 </section>
 <div class="backsplash-section2" id="portfolio-gallery">
     <!-- Div with icon and intro information in center of hero section -->
         <h1 class="portfolio-intro">My Work</h1>
 </div>
+<!-- PORTFOLIO SECTION -->
 <section class="dark-to-light-section">
-    <div class="container">
+    <div class="container" id="portfolio-container">
       <div class="row portfolio-flex">
+        <!-- Portfolio Project 1 -->
+        <div class="card-container col s12 m6 l4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator portfolio-image" src="./assets/images/gardenerforum-ss.jpg" alt="Gardener's Forum Screen Shot">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Gardener's Forum<i class="material-icons right">more_vert</i></span>
+              <p>A MERN FUll-Stack web application that allows gardeners to build and maintain their virtual garden.</p><br>
+              <p><span class="role-title">Role:</span><span>Back-End Server, GraphQL API Endpoints, React Front End</span></p>
+            </div>
+            <div class="card-reveal">
+              <div class="reveal-flex">
+              <div>
+              <span class="card-title">Gardener's Forum<i class="material-icons right">close</i></span>
+              <p class="tech">Tools and Techniques</p>
+              <p>MongoDB</p>
+              <p>Express.JS</p>
+              <p>React</p>
+              <p>Node.JS</p>
+              <p>Material UI</p>
+              <p>Apollo GraphQL</p>
+              <p>Mongoose ODM</p>
+              <p>API Endpoints</p>
+              <p>Third Party API</p> 
+              <p>JSON Web Tokens</p>
+              </div>
+              <div class="project-links">
+                <a href="https://gardenforum.herokuapp.com/" target="_blank" id="demo-button" class="waves-effect waves-light btn">Demo</a>
+                <a href="https://github.com/bdswartz/garden-forum" target="_blank"id="demo-button" class="waves-effect waves-light btn"><img class="github-link" src="./assets/images/github-white-on-transparent.png" alt="Goto GitHub Repo"></a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Project 2 -->
         <div class="card-container col s12 m6 l4">
         <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
@@ -159,6 +212,7 @@
           </div>
           </div>
         </div>
+        <!-- Portfolio Project 3 -->
           <div class="card-container col s12 m6 l4">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
@@ -189,6 +243,7 @@
             </div>
           </div>
         </div>
+        <!-- Portfolio project 4 -->
           <div class="card-container col s12 m6 l4">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
@@ -220,6 +275,7 @@
             </div>
           </div>
         </div>
+        <!-- Portfolio Project 5 -->
           <div class="card-container col s12 m6 l4">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
@@ -249,7 +305,8 @@
             </div>
         </div>
       </div>
-      <div class="card-container col s12 m6 l4">
+      <!-- Portfolio Project 5 -->
+      <!-- <div class="card-container col s12 m6 l4">
         <div class="card">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator portfolio-image" src="./assets/images/run-buddy-ss.jpg" alt="Run Buddy Screen Shot">
@@ -274,7 +331,8 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+      <!-- Portfolio Project 6 -->
         <div class="card-container col s12 m6 l4">
         <div class="card">
           <div class="card-image waves-effect waves-block waves-light">
@@ -312,6 +370,7 @@
     <!-- Div with icon and intro information in center of hero section -->
         <h1 class="portfolio-intro">Contact Information</h1>
 </div>
+<!-- CONTACT SECTION -->
 <section class="dark-to-light-section contact-info-section">
     <!-- <h2 class="section-title">Contact Information</h2> -->
     <div class="contact-flex-container">
@@ -377,8 +436,19 @@
       </div>
 </section>
 </main>
-<!-- Footer - Website designed and programmed by Brian Swartz -->
 <footer>
+  <div class="icon-container">
+    <img class="image-icon" src="./assets/images/html-icon.svg" alt="">
+    <img class="image-icon" src="./assets/images/css-icon.svg" alt="">
+    <img class="image-icon" src="./assets/images/javascript-icon.svg" alt="">
+    <img class="image-icon" src="./assets/images/react-icon.svg" alt="">
+    <img class="image-icon" src="./assets/images/node-icon.svg" alt="">
+    <img class="image-icon" src="./assets/images/express-icon.svg" alt="">
+    <img class="image-icon" src="./assets/images/mysql-icon.svg" alt="">
+    <img class="image-icon" src="./assets/images/mongodb-icon.svg" alt="">
+    <img class="image-icon" src="./assets/images/graphql-icon.svg" alt="">
+    <img class="image-icon" src="./assets/images/github-icon.svg" alt="">
+  </div>
   <h4>Designed and Created by Brian Swartz</h4>
 </footer>
 <script src="./assets/js/script.js"></script>

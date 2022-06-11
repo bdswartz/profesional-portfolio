@@ -84,23 +84,23 @@ body {
     margin:0;
     max-width: none;
   }
-.container {
-   width: 100%;  
-   padding-top: 50px;
-   padding-bottom: 50px;
-}
 .row {
     margin: 0px;
 }
 .portrait-holder {
     margin-top:50px;
 }
-.about-me {
+#about-me {
+    min-height: 100vh;
+    width:100%;
     font-size: 1.75rem;
     color: var(--tertiary-color);
-    margin-left:20px;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
 }
 .bio-body {
     color: var(--tertiary-color);
@@ -166,6 +166,20 @@ body {
       border:none;
       box-shadow: none;
   }
+  .icon-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-items: space-between;
+      width: 100%;
+  }
+  .image-icon {
+      flex:1;
+      margin:10px;
+      height: 75px;
+      width: 75px;
+      color: var(--tertiary-color);
+  }
   .backsplash-section2 {
     align-items: center;
     background-image: url("../images/3828864.jpg");
@@ -204,6 +218,11 @@ body {
     letter-spacing: 2px;
     word-spacing: 10px;
     color: var(--primary-color);
+  }
+  #portfolio-container {
+      padding-top:50px; 
+      padding-bottom: 50px;
+      width:100%;
   }
   .skills{
       margin-top: 30px;
