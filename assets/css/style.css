@@ -128,6 +128,8 @@ body {
     font-size: 1.2rem;
     margin-top:0;
     margin-bottom:7px;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
 }
 
 .tech-list-group2 {
